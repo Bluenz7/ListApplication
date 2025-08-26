@@ -10,7 +10,7 @@ import Foundation
 class StocksService {
     
     func fetchStocks(completion: @escaping (Result<[StocksDTO], Error>) -> Void) {
-        let urlString = "http://mustdev.ru/api/stocks.json"
+        let urlString = "https://mustdev.ru/api/stocks.json"
         
         guard let url = URL(string: urlString) else {
                let urlError = NSError(domain: "InvalidURL", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL string"])
